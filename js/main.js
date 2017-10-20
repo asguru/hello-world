@@ -12,11 +12,12 @@ var chart = new Chart(ctx, {
             // Label that shows up in the legend
             // This is the first dataset with the first set of patients
             label: "Treatment 1",
-            backgroundColor: 'rgb(255, 99, 132)',
+            backgroundColor: 'rgb(25, 99, 132)',
             fill: 'false',
             // steppedLine: 'before' makes the dots on the scatterplot connected by the stepped line like they are in survival plots, and the step occurs before the line moves down
             steppedLine: 'before',
             borderColor: 'rgb(25, 99, 132)',
+            pointRadius: [5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5],
             // This is the format in which data is inputted
             data: [{
                 x: 13,
@@ -76,10 +77,11 @@ var chart = new Chart(ctx, {
         }, {
             // This is the second dataset with the second set of patients
             label: "Treatment 2",
-            backgroundColor: 'rgb(50, 99, 132)',
+            backgroundColor: 'rgb(180, 12, 1)',
             fill: 'false',
             steppedLine: 'before',
             borderColor: 'rgb(180, 12, 1)',
+            pointRadius: [5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 5],
             data: [{
                 x: 35,
                 y: 1
